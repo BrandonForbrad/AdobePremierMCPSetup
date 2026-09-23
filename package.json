@@ -1,0 +1,36 @@
+{
+  "name": "adobe-premiere-mcp-setup",
+  "version": "1.0.0",
+  "description": "One-command Windows installer for the Adobe Premiere Pro MCP bridge",
+  "type": "module",
+  "bin": {
+    "premiere-mcp-setup": "bin/premiere-mcp-setup.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node bin/premiere-mcp-setup.js",
+    "doctor": "node bin/premiere-mcp-setup.js doctor",
+    "test": "node --test",
+    "check": "node --check bin/premiere-mcp-setup.js && node --check src/setup.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "adobe",
+    "premiere-pro",
+    "mcp",
+    "codex",
+    "cursor",
+    "windows"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jsonc-parser": "^3.3.1"
+  }
+}
